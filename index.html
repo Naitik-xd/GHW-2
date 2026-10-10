@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradeLab — Color Palette Generator</title>
+    <meta
+      name="description"
+      content="GradeLab generates harmonious five-color palettes with lockable swatches and one-click HEX copy."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to palette</a>
+
+    <div class="app">
+      <header class="site-header">
+        <div class="brand">
+          <p class="logo">GradeLab</p>
+          <p class="tagline">Find your next look.</p>
+        </div>
+        <p class="shortcut-hint" aria-hidden="true">
+          <kbd>Space</kbd> generate · <kbd>C</kbd> copy all
+        </p>
+      </header>
+
+      <main id="main">
+        <div class="toolbar">
+          <button type="button" class="btn btn-primary" id="generate-btn">
+            Generate Palette
+          </button>
+          <button type="button" class="btn btn-ghost" id="copy-all-btn">
+            Copy All
+          </button>
+        </div>
+
+        <section
+          class="palette"
+          id="palette"
+          aria-label="Generated color palette"
+        ></section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Made for creative minds.</p>
+      </footer>
+    </div>
+
+    <div
+      class="toast"
+      id="toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      hidden
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
